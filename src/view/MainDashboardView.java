@@ -82,8 +82,8 @@ public class MainDashboardView extends JFrame {
 
         // 통계 메뉴
         JMenu statsMenu = new JMenu("통계");
-        statsMenu.add(new JMenuItem("수확/판매 통계"));
-        //statsMenu.add(new JMenuItem("판매 통계"));
+        statsMenu.add(new JMenuItem("수확 통계"));
+        statsMenu.add(new JMenuItem("판매 통계"));
         menuBar.add(statsMenu);
 
         // 도움말 메뉴
