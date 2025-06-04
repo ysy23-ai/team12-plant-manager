@@ -16,9 +16,6 @@ public class MainDashboardView extends JFrame {
     // UI 컴포넌트들 - Controller가 접근할 수 있도록 private + getter 제공
     private JTable plantTable;
     private DefaultTableModel plantTableModel;
-    private JButton addPlantBtn;
-    private JButton harvestBtn;
-    private JButton saleBtn;
     private JButton detailBtn;
     private JButton editBtn;
     private JButton deleteBtn;
@@ -107,22 +104,6 @@ public class MainDashboardView extends JFrame {
         JLabel dateLabel = new JLabel("오늘 날짜: " + currentDate);
         dateLabel.setFont(new Font("맑은 고딕", Font.BOLD, 14));
         topPanel.add(dateLabel, BorderLayout.WEST);
-
-        // 빠른 액션 버튼 패널
-        JPanel actionPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
-        addPlantBtn = new JButton("식물 추가");
-        harvestBtn = new JButton("수확 기록");
-        saleBtn = new JButton("판매 기록");
-
-        // 버튼 스타일링
-        addPlantBtn.setFont(new Font("맑은 고딕", Font.BOLD, 12));
-        harvestBtn.setFont(new Font("맑은 고딕", Font.BOLD, 12));
-        saleBtn.setFont(new Font("맑은 고딕", Font.BOLD, 12));
-
-        actionPanel.add(addPlantBtn);
-        actionPanel.add(harvestBtn);
-        actionPanel.add(saleBtn);
-        topPanel.add(actionPanel, BorderLayout.EAST);
 
         return topPanel;
     }
@@ -348,9 +329,6 @@ public class MainDashboardView extends JFrame {
 
     public JTable getPlantTable() { return plantTable; }
     public DefaultTableModel getPlantTableModel() { return plantTableModel; }
-    public JButton getAddPlantButton() { return addPlantBtn; }
-    public JButton getHarvestButton() { return harvestBtn; }
-    public JButton getSaleButton() { return saleBtn; }
     public JButton getDetailButton() { return detailBtn; }
     public JButton getEditButton() { return editBtn; }
     public JButton getDeleteButton() { return deleteBtn; }
