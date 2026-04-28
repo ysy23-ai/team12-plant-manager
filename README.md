@@ -11,6 +11,7 @@ MVC 패턴을 적용하여 설계되었습니다.
 구분기술LanguageJavaUIJava SwingArchitectureMVC Pattern
 
 📁 프로젝트 구조
+```
 team12-plant-manager/
 ├── main               # 실행 클래스 (진입점)
 ├── view               # Swing UI 클래스
@@ -20,6 +21,7 @@ team12-plant-manager/
 │   ├── Waterlog.java
 │   └── package controller.java
 └── README.md
+```
 
 ▶️ 실행 방법
 Java 17 이상 환경에서 아래와 같이 실행하세요.
